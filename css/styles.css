@@ -1,0 +1,12 @@
+
+/*Hide tracking alerts until ready*/
+
+#successAlert{
+    display: none;
+    background: green;
+}
+
+#failAlert{
+    display: none;
+    background: red;
+}

@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <title>Watch Your Weight, Fattie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <h1>KP's Weight Watcher's</h1>
@@ -12,14 +13,24 @@
     <form class="weightForm" id="weightForm">
         <input type="number" name="weight" id="weight">
         <label for="weight">Weight</label>
-        <input type="radio" name="pounds" id="pounds">
-        <label for="pounds">Pounds</label>
-        <input type="radio" name="kilos" id="kilos">
-        <label for="kilos">Kilos</label>
-        <input type="date" name="date" id="date">
-        <input type="time" name="time" id="time">
+        <fieldset class="units">
+            <legend>Units</legend>
+            <input type="radio" name="units" id="pounds" value="pounds">
+            <label for="pounds">Pounds</label>
+            <input type="radio" name="units" id="kilos" value="kilos">
+            <label for="kilos">Kilos</label>
+
+        </fieldset>
+        <input type="date" name="date" id="date"><br>
+        <input type="time" name="time" id="time"><br>
         <input type="submit" name="submit" id="submit">
     </form>
+    <div id="successAlert">
+        <p>Data Recorded!</p>
+    </div>
+    <div id="failAlert">
+        <p>Error! Try Again!</p>
+    </div>
     <script src="script/main.js"></script>
 </body>
 </html>
