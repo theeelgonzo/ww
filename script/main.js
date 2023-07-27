@@ -9,11 +9,12 @@ function handleSubmit(event) {
     let xhr = new XMLHttpRequest();
     let url = "url?data=" + encodeURIComponent(JSON.stringify({value}));
     xhr.open("GET", url, true);
+    xhr.responseType="text";
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
-        var json = JSON.parse(xhr.responseText);
-        console.log(json.email + ", " + json.password);
+        let json = JSON.parse(xhr.responseText);
+        console.log(json.weight + ", " + json.date);
     }
 };
   xhr.send();
