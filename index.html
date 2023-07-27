@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <h1>KP's Weight Watcher's</h1>
-    <h2>Track Your Weight</h2>
+    <h1>KP's Weight Watchers</h1>
     <form class="weightForm" id="weightForm">
+        <h2 class="formTitle">Track Your Weight</h2>
+        <label for="weight">Weight</label><br>
         <input type="number" name="weight" id="weight">
-        <label for="weight">Weight</label>
         <fieldset class="units">
             <legend>Units</legend>
             <input type="radio" name="units" id="pounds" value="pounds">
@@ -23,7 +23,7 @@
         </fieldset>
         <input type="date" name="date" id="date"><br>
         <input type="time" name="time" id="time"><br>
-        <input type="submit" name="submit" id="submit">
+        <input type="submit" name="submit" id="submit" class="subBtn">
     </form>
     <div id="successAlert">
         <p>Data Recorded!</p>
