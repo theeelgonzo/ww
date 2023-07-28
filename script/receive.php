@@ -7,6 +7,6 @@ $v = file_get_contents("php://input");
 // build a PHP variable from JSON sent using GET method
 $data = json_decode($v);
 // encode the PHP variable to JSON and send it back on client-side
-echo $data
+//echo $data;
 echo json_encode($data);
 ?>
