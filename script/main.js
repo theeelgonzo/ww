@@ -8,7 +8,7 @@ function handleSubmit(event) {
     /*console.log(JSON.stringify({ value }))*/
     let xhr = new XMLHttpRequest();
     let url = "url?data=" + encodeURIComponent(JSON.stringify({value}));
-    xhr.open("GET", url, true);
+    xhr.open("POST", "script/receive.php", true);
     xhr.responseType="text";
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {
