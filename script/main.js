@@ -13,8 +13,8 @@ function handleSubmit(event) {
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
-        let json = JSON.parse(xhr.responseText);
-        console.log(json.weight + ", " + json.date);
+//        let json = JSON.parse(xhr.responseText);
+        console.log(xhr.responseText);
     }
 };
   xhr.send(JSON.stringify({value}));
