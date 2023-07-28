@@ -17,7 +17,7 @@ function handleSubmit(event) {
         console.log(json.weight + ", " + json.date);
     }
 };
-  xhr.send();
+  xhr.send(JSON.stringify({value}));
   }
 
   const form = document.getElementById('weightForm');
