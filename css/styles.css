@@ -1,9 +1,11 @@
 main{
     display:flex;
+    justify-content: space-around;
 }
 
 .weightForm{
     flex:1;
+
     min-width: fit-content;
     max-width: 30%;
     border: 1px solid black;
