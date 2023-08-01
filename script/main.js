@@ -24,4 +24,13 @@ function handleSubmit(event) {
   form.addEventListener('submit', handleSubmit);
 
   // Sending a receiving data in JSON format using GET method
-//      
+//
+function pullPreviousRecord(event){
+    event.preventDefault();
+    const dateValue = document.getElementById('selectPrevious').value;
+    const formInput = document.getElementById('previousWeight');
+    console.log(`Looking for something from ${dateValue}?`);
+};
+
+const prevForm = document.getElementById('previousRecord');
+prevForm.addEventListener('submit', pullPreviousRecord)
