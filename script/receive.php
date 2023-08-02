@@ -16,7 +16,7 @@ $records = [
     ['date' => 'july072023',
     'weight'=> '175']
 ];
-$dateValue = isset($_GET['date']) ? (int) $_GET['date'] : 0;
+$dateValue = $_GET['date'];
 
   foreach($records as $record) {
       if($record['date'] == $dateValue) {
