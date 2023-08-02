@@ -21,5 +21,6 @@ $dateValue = isset($_GET['date']) ? (int) $_GET['date'] : 0;
   foreach($records as $record) {
       if($record['date'] == $dateValue) {
           echo $record['weight'];
-    }
+      }
+  }
 ?>
