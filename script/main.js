@@ -31,13 +31,14 @@ function pullPreviousRecord(event){
     const formInput = document.getElementById('previousWeight');
     console.log(`Looking for something from ${dateValue}?`);
     let xhr = new XMLHttpRequest();
-    let url = 'receive.php?date=' + dateValue;
+    let url = 'script/receive.php?date=' + dateValue;
     xhr.open("GET", url, true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
             formInput.innerHTML = xhr.responseText;
         };
     };
+    xhr.send();
 };
 
 const prevForm = document.getElementById('previousRecord');
