@@ -2,7 +2,12 @@
     font-size: 2em;
     text-align: center;
     line-height: 2em;
-    padding: 2em 0;
+    padding: 1em 0;
+}
+.emptyDiv{
+    margin: auto;
+    max-width: 50%;
+    padding-bottom: 2em;
 }
 main{
     display:flex;
